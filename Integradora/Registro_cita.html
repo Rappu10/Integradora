@@ -1,15 +1,18 @@
         <section id="cotizacion">
         <h2>Solicita una cotización o agenda una cita</h2>
         <form id="cotizacionForm">
-            <label for="nombre">Nombre Completo:</label>
+            <label for="nombre"><p>Nombre Completo:</p></label>
             <input type="text" id="nombre" name="nombre" required>
 
-            <label for="email">Correo Electrónico:</label>
+            <label for="email"><p>Correo Electrónico:</p></label>
             <input type="email" id="email" name="email" required>
 
-            <label for="mensaje">Mensaje:</label>
+            <label for="mensaje"><p>Mensaje:</p></label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
             <button type="submit">Enviar</button>
+
+        <p><button onclick="window.history.back()">Volver</button></p>
+
         </form>
     </section>
