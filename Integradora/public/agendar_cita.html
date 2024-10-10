@@ -5,25 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar Cita - Constructora CANESA</title>
     <link rel="stylesheet" href="styles.css">
+    <form action="/agendarCita" method="POST">
 </head>
 <body>
     <div class="container">
-        <h1>Agendar Cita</h1>
-        <form action="/agendarCita" method="POST">
-            <!-- Campo de estado -->
-            <input type="text" name="estado" placeholder="Estado" required><br><br>
-            
-            <!-- Campo de fecha -->
-            <input type="datetime-local" name="fecha" required><br><br>
-
-            <!-- Campo de número de cliente -->
-            <input type="number" name="num_cliente" placeholder="Número de Cliente" required><br><br>
-
-            <!-- Campo de ID trabajador -->
-            <input type="number" name="trabajador" placeholder="ID Trabajador" required><br><br>
-
-            <!-- Botón para agendar la cita -->
-            <button type="submit">Agendar Cita</button>
+        <h2>Agendar Cita</h2>
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="date" name="fecha" required>
+            <input type="time" name="hora" required>
+            <button type="submit">Agendar</button>
         </form>
     </div>
 </body>
