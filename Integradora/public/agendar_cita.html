@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Constructora CANESA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendar Cita</h1>
+        <form action="/agendarCita" method="POST">
+            <!-- Campo de estado -->
+            <input type="text" name="estado" placeholder="Estado" required><br><br>
+            
+            <!-- Campo de fecha -->
+            <input type="datetime-local" name="fecha" required><br><br>
+
+            <!-- Campo de número de cliente -->
+            <input type="number" name="num_cliente" placeholder="Número de Cliente" required><br><br>
+
+            <!-- Campo de ID trabajador -->
+            <input type="number" name="trabajador" placeholder="ID Trabajador" required><br><br>
+
+            <!-- Botón para agendar la cita -->
+            <button type="submit">Agendar Cita</button>
+        </form>
+    </div>
+</body>
+</html>
